@@ -3,7 +3,7 @@
 
 This boilerplate provides a solid foundation for developing Windows applications using HTML, CSS, and JavaScript. While initially configured for Windows, it can be adapted for Linux applications as well.
 
-
+The build will provide you with a portable version and a "setup.exe".
 
 This application is a comprehensive "all-in-one" solution, which deploys all necessary services with a single command.
 
