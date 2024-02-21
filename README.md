@@ -37,13 +37,22 @@ It is built upon:
     ```
 
 - **Development**
-    > This command opens a window in your browser for previewing the Electron application.
+    > This command opens a window in your browser and a previewing of the Electron application.
     ```bash
     yarn dev
     ```
     > Alternatively, you can simply open the client using:
     ```bash
     yarn serve:client
+    ```
+    > Similarly, there are also the following commands:  
+    - Start - Runs only Electron, with the static web files generated in the "build" folder hosted in the "interface" folder.  
+    ```bash
+    yarn start
+    ```
+    - Start:client - Runs only the Svelte /client project
+    ```bash
+    yarn start:client
     ```
 
 - **Build**

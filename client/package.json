@@ -5,6 +5,7 @@
   "author": "borrageiros",
   "scripts": {
     "build": "vite build",
+    "start": "vite --port 57805",
     "dev": "vite --port 57805 --open"
   },
   "devDependencies": {

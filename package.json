@@ -8,8 +8,10 @@
     "installation": "yarn && cd client && yarn",
     "build": "cd client && yarn build && cd .. && electron-builder",
     "build:client": "cd client && yarn build",
-    "dev": "concurrently \"yarn serve:client\" \"electron .\"",
-    "serve:client": "cd client && yarn dev",
+    "start": "cross-env DEBUG=FALSE electron .",
+    "start:client": "cd client && yarn dev",
+    "dev": "concurrently \"yarn dev:client\" \"electron .\"",
+    "dev:client": "cd client && yarn dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "build": {
@@ -54,6 +56,7 @@
     "nodemon": "^3.0.3"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "electron": "^29.0.0",
     "electron-builder": "^24.12.0"
   }
