@@ -1,0 +1,60 @@
+{
+  "name": "boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "author": "borrageiros",
+  "scripts": {
+    "installation": "yarn && cd client && yarn",
+    "build": "cd client && yarn build && cd .. && electron-builder",
+    "build:client": "cd client && yarn build",
+    "dev": "concurrently \"yarn serve:client\" \"electron .\"",
+    "serve:client": "cd client && yarn dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "appId": "com.borrageiros.app",
+    "productName": "App",
+    "directories": {
+      "output": "dist"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": true,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "shortcutName": "App"
+    },
+    "mac": {
+      "target": "dmg"
+    },
+    "extraFiles": [
+      {
+        "from": "interface",
+        "to": "./interface",
+        "filter": [
+          "**/*"
+        ]
+      },
+      {
+        "from": "database",
+        "to": "./database",
+        "filter": [
+          "**/*",
+          "!data.db"
+        ]
+      }
+    ]
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "nedb": "^1.8.0",
+    "nodemon": "^3.0.3"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-builder": "^24.12.0"
+  }
+}
