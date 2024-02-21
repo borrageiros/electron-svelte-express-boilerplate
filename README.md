@@ -1,7 +1,8 @@
 
 # Electron Svelte Express Boilerplate
 
-This boilerplate provides a solid foundation for developing Windows applications using HTML, CSS, and JavaScript. While initially configured for Windows, it can be adapted for Linux applications as well.
+This boilerplate provides a solid foundation for developing Windows applications using a full-stack web application developed with HTML, CSS, and JavaScript (front-end, back-end, and local database).
+While initially configured for Windows, it can be adapted for Linux applications as well.
 
 The build will provide you with a portable version and a "setup.exe".
 
