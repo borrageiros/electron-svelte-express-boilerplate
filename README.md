@@ -66,8 +66,83 @@ It is built upon:
     ```
 
 ## ℹ | Info
-> **🔴Default ports of the aplication in dev mode:**
+> **🔴 Default ports of the application in dev mode:**
 
 - Interface: 57805
 
 - API: 57806
+
+> **🔴 Database use example:**  
+
+> There are 4 API requests showing examples of basic usage of the local database, whose functions are defined in "database/db.js"  
+Default URL: http://localhost:57806
+***
+- **/insert-example**  
+    - Method: POST
+    - Example body (JSON):  
+        ```bash
+        {
+            "name": "John",
+            "age": 32
+        }
+        ```
+    - Response:
+        ```bash
+        {
+            "data": {
+                "name": "John",
+                "age": 32,
+                "_id": "jNofwTqfxvh8vP0e"
+            }
+        }
+        ```
+***
+- **/find-example/:id**
+    - Method: GET
+    - Url params: id
+    - Response:
+        ```bash
+        {
+            "data": [
+                {
+                    "name": "John",
+                    "age": 32,
+                    "_id": "jNofwTqfxvh8vP0e"
+                }
+            ]
+        }
+        ```
+***
+- **/update-example/:id**
+    - Method: PUT
+    - Url params: id
+    - Example body (JSON):  
+        ```bash
+        {
+            "name": "Oscar",
+            "age": 37
+        }
+        ```
+    - Response:
+        ```bash
+        {
+            "message": "Document updated successfully.",
+            "data": [
+                {
+                    "name": "Oscar",
+                    "age": 37,
+                    "_id": "jNofwTqfxvh8vP0e"
+                }
+            ]
+        }
+        ```
+***
+- **/remove-example/:id**
+    - Method: DELETE
+    - Url params: id
+    - Response:
+        ```bash
+        {
+            "message": "Document removed successfully."
+        }
+        ```
