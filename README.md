@@ -66,15 +66,15 @@ It is built upon:
     ```
 
 ## ℹ | Info
-> **🔴 Default ports of the application in dev mode:**
+**🔴 Default ports of the application in dev mode:**
 
 - Interface: 57805
 
 - API: 57806
 
-> **🔴 Database use example:**  
+**🔴 Database use example:**  
 
-> There are 4 API requests showing examples of basic usage of the local database, whose functions are defined in "database/db.js"  
+There are 4 API requests showing examples of basic usage of the local database, whose functions are defined in "database/db.js"  
 Default URL: http://localhost:57806
 ***
 - **/insert-example**  
