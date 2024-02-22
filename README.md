@@ -51,7 +51,7 @@ The boilerplate consists of two important parts:
     yarn serve:client
     ```
     > Similarly, there are also the following commands:  
-    - start - Runs only Electron, with the static web files generated in the "build" folder hosted in the "interface" folder.  
+    - start - Runs only Electron, with the static web files generated in the Svelte build folder, hosted in the "interface" folder.  
     ```bash
     yarn start
     ```
