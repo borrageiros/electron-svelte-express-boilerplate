@@ -20,7 +20,12 @@ It is built upon:
 ## 🚧 | Prerequisites
 - [Node.js >= 20](https://nodejs.org/en/download/)
 - [yarn](https://classic.yarnpkg.com/lang/en/docs/install/#windows-stable)
+
 ## 📝 | Installation
+
+The boilerplate consists of two important parts:  
+**server side**: contains Electron, the Express API, and the database  
+**client side**: contains the interface, which can be edited as needed and then built into static files for Electron to use.
 
 - **Install requirements**
     ```bash
@@ -46,11 +51,11 @@ It is built upon:
     yarn serve:client
     ```
     > Similarly, there are also the following commands:  
-    - Start - Runs only Electron, with the static web files generated in the "build" folder hosted in the "interface" folder.  
+    - start - Runs only Electron, with the static web files generated in the "build" folder hosted in the "interface" folder.  
     ```bash
     yarn start
     ```
-    - Start:client - Runs only the Svelte /client project
+    - start:client - Runs only the Svelte /client project
     ```bash
     yarn start:client
     ```
