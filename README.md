@@ -13,7 +13,7 @@ It is built upon:
 - **Compiler**: Utilizes Electron for compiling the application.
 - **Graphical Interface**: Employs Vite and Svelte to create a smooth and responsive user interface.
 - **API**: Utilizes ExpressJS for seamless communication with the computer.
-- **Database**: Implements NeDB, offering persistent storage in local files without the need for SQL.
+- **Database**: Implements NeDB - a noSql database offering persistent storage in local files.
 
 ![screenshot](./screenshot.jpg)
 
